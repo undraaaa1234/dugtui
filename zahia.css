@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bur-ard-tal {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3763;
+}
+
+.dugtuinii-ard-tal {
+    width: 400px;
+    height: 300px;
+    background-color: #fa4343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.zahia {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.zahia p {
+    margin-top: 30px;
+}
+
+.dugtuinii-urd-tal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 150px solid transparent;
+    border-right: 200px solid green;
+    border-bottom: 150px solid pink;
+    border-left: 200px solid yellow;
+    z-index: 3;
+}
+
+.deed-taliin-gurvaljin {
+    width: 400px;
+    position: relative;
+    z-index: 3;
+    border-right: 200px solid transparent;
+    border-bottom: 150px solid black;
+    border-left: 200px solid transparent;
+    transform-origin: bottom;
+    transition: 300ms;
+    transform: rotateX(180deg);
+}
+
+
+.container>div:hover .deed-taliin-gurvaljin {
+    transform: rotateX(0deg);
+    position: relative;
+    z-index: 0;
+}
+
+.container>div:hover .zahia {
+    transform: translateY(-100px);
+    transition-delay: 400ms;
+    transition-duration: 400ms;
+}
